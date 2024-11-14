@@ -27,5 +27,5 @@ resource "oci_core_subnet" "example_subnet2" {
     compartment_id = var.compartment_id
     display_name = "example_subnet2"
     vcn_id = oci_core_vcn.example_vcn.id
-    cidr_block = "10.0.0.0/24"
+    cidr_block = "10.0.1.0/24"
 }
