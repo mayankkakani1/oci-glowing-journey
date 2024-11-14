@@ -4,7 +4,7 @@
     
       variable "compartment_ocid" {}
       variable "tenancy_ocid" {}
-      variable "region" {}
+      variable "region" { default = "us-sanjose-1"}
       
       variable "instance_display_name" {}
       variable "ipxe_script" {}
