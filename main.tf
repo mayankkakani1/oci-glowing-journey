@@ -3,13 +3,16 @@
     // Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
 
       terraform {
-        required_version = ">= 0.14.11"
         required_providers {
           oci = {
             source = "oracle/oci"
           }
         }
       }
+
+    provider "oci" {
+    region = "us-sanjose-1"
+}
 
       data "oci_core_subnet" "this" {
         subnet_id = var.subnet_ocid
